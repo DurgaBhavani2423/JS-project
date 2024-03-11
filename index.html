@@ -10,6 +10,9 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
+        background-color:rgb(48, 56, 32);
+
+        
     }
 
     #searchform {
@@ -25,14 +28,29 @@
 
     #searchbox {
         width: 300px;
-        padding: 10px;
+        padding: 11px;
         font-size: 16px;
+        color: white;
+        background-color: black;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border: 2px solid brown;
+    }
+   
+    .bt1{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding:13px;
+    }
+   button:hover{
+        box-shadow: 1px 1px 15px rgb(216, 73, 73);
+       
     }
 
     button {
         padding: 10px 20px;
         font-size: 16px;
-        background-color:red;
+        background-color:rgb(243, 28, 28);
         color: #fff;
         border: none;
         cursor: pointer;
@@ -53,11 +71,17 @@
         width: 200px;
         height: 200px;
         object-fit: cover;
-        border-radius: 5px;
+        border-radius: 10px;
+    }
+
+    .imgs:hover{
+        transform: translateY(-10px);
+        box-shadow: 1px 1px 20px gray;
+        /* border-radius: 50px; */
     }
     h1{
         text-align: center;
-        color:brown;
+        color:ghostwhite;
         font-style: italic;
     }
 
@@ -66,10 +90,11 @@
         margin: 20px auto;
         padding: 10px 20px;
         font-size: 16px;
-        background-color: red;
-        color: #fff;
+        background-color: rgb(216, 22, 22);
+        color: white;
         border: none;
-        cursor: pointer
+        cursor: pointer;
+        border-radius: 10px;
     }
     
     
@@ -100,7 +125,7 @@
 <div id="searchform">
     <form id="getform">
         <input type="text" id="searchbox" placeholder="Search for images...">
-        <button type="submit">Search</button>
+        <button type="submit" class="bt1">Search</button>
     </form>
 </div>
 
